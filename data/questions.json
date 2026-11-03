@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "source": "Original practice questions written for training. NOT official UPSC PYQs.",
+    "note": "Import verified previous-year questions using the Exam module's JSON importer."
+  },
+  "questions": [
+    {"subject":"English","question":"Choose the correct synonym for 'audacious'.","options":["Timid","Bold","Quiet","Slow"],"answer":1,"explanation":"Audacious means bold or daring."},
+    {"subject":"English","question":"Select the correctly spelt word.","options":["Occurence","Occurrence","Occurance","Ocurrence"],"answer":1,"explanation":"'Occurrence' has double c and double r."},
+    {"subject":"English","question":"Fill in: He has been living here ___ 2010.","options":["for","since","from","by"],"answer":1,"explanation":"'Since' is used with a point in time."},
+    {"subject":"General Knowledge","question":"The Indian Army's highest peacetime gallantry award is:","options":["Param Vir Chakra","Ashoka Chakra","Shaurya Chakra","Vir Chakra"],"answer":1,"explanation":"Ashoka Chakra is the highest peacetime gallantry award."},
+    {"subject":"General Knowledge","question":"The Constitution of India came into effect on:","options":["15 Aug 1947","26 Jan 1950","26 Nov 1949","2 Oct 1950"],"answer":1,"explanation":"It came into force on 26 January 1950."},
+    {"subject":"General Knowledge","question":"Which article of the Constitution deals with the Right to Constitutional Remedies?","options":["Article 19","Article 21","Article 32","Article 14"],"answer":2,"explanation":"Article 32 is the right to constitutional remedies."},
+    {"subject":"Mathematics","question":"What is 15% of 240?","options":["36","32","40","28"],"answer":0,"explanation":"15% of 240 = 36."},
+    {"subject":"Mathematics","question":"If a train covers 180 km in 3 hours, its speed is:","options":["50 km/h","60 km/h","55 km/h","65 km/h"],"answer":1,"explanation":"180/3 = 60 km/h."},
+    {"subject":"Mathematics","question":"The HCF of 12 and 18 is:","options":["3","6","9","12"],"answer":1,"explanation":"Common factors give 6 as HCF."},
+    {"subject":"Mathematics","question":"Simplify: 2/3 + 1/6","options":["4/6","5/6","3/6","2/6"],"answer":1,"explanation":"2/3 = 4/6, +1/6 = 5/6."}
+  ]
+}

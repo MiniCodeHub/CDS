@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>CDS 2028 Command Centre</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<div id="app">
+  <!-- Sidebar -->
+  <aside class="sidebar" id="sidebar">
+    <div class="brand">
+      <div class="brand-badge">CDS</div>
+      <div>
+        <h1>Command Centre</h1>
+        <span>IMA · 2028</span>
+      </div>
+    </div>
+    <nav class="nav" id="nav">
+      <a href="#dashboard" class="nav-link active" data-view="dashboard">📊 Dashboard</a>
+      <a href="#plan" class="nav-link" data-view="plan">🗓️ My Study Plan</a>
+      <a href="#daily" class="nav-link" data-view="daily">✅ Daily Tracker</a>
+      <a href="#exam" class="nav-link" data-view="exam">📝 Weekly Examinations</a>
+      <a href="#results" class="nav-link" data-view="results">🏆 Test Results</a>
+      <a href="#syllabus" class="nav-link" data-view="syllabus">📚 Subject Progress</a>
+      <a href="#affairs" class="nav-link" data-view="affairs">📰 Current Affairs</a>
+      <a href="#revision" class="nav-link" data-view="revision">🔁 Revision Manager</a>
+      <a href="#ssb" class="nav-link" data-view="ssb">🎖️ SSB Preparation</a>
+      <a href="#fitness" class="nav-link" data-view="fitness">💪 Fitness Tracker</a>
+      <a href="#registration" class="nav-link" data-view="registration">📋 UPSC Registration</a>
+      <a href="#reminders" class="nav-link" data-view="reminders">🔔 Email & Reminders</a>
+      <a href="#settings" class="nav-link" data-view="settings">⚙️ Settings</a>
+    </nav>
+    <div class="sidebar-footer">
+      <small id="storage-info">Local Storage</small>
+    </div>
+  </aside>
+
+  <main class="main">
+    <!-- Topbar -->
+    <header class="topbar">
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">☰</button>
+      <div class="topbar-stats">
+        <span class="top-stat" id="top-date">--</span>
+        <span class="top-stat countdown" id="top-countdown">--</span>
+        <span class="top-stat streak" id="top-streak">🔥 0 day streak</span>
+      </div>
+      <div class="topbar-actions">
+        <button class="icon-btn" id="btn-notifications" title="Notifications">🔔<span class="badge" id="notif-badge">0</span></button>
+        <button class="icon-btn" id="btn-theme" title="Toggle theme">🌗</button>
+        <div class="profile" id="profile-chip">Cadet</div>
+      </div>
+    </header>
+
+    <!-- Notification drawer -->
+    <div class="notification-panel" id="notification-panel">
+      <div class="panel-head"><strong>Notifications</strong><button id="clear-notifs">Clear</button></div>
+      <div id="notif-list" class="notif-list"></div>
+    </div>
+
+    <!-- Views -->
+    <section class="view active" id="view-dashboard">
+      <div class="panel"><h3>Loading Command Centre...</h3></div>
+    </section>
+    <section class="view" id="view-plan"></section>
+    <section class="view" id="view-daily"></section>
+    <section class="view" id="view-exam"></section>
+    <section class="view" id="view-results"></section>
+    <section class="view" id="view-syllabus"></section>
+    <section class="view" id="view-affairs"></section>
+    <section class="view" id="view-revision"></section>
+    <section class="view" id="view-ssb"></section>
+    <section class="view" id="view-fitness"></section>
+    <section class="view" id="view-registration"></section>
+    <section class="view" id="view-reminders"></section>
+    <section class="view" id="view-settings"></section>
+  </main>
+</div>
+
+<!-- Timer modal (No `hidden` attribute, handled by CSS) -->
+<div class="modal-backdrop" id="timer-modal">
+  <div class="modal">
+    <h3>Study Session Timer</h3>
+    <div class="timer-display" id="timer-display">00:00:00</div>
+    <div class="timer-controls">
+      <button id="timer-start" class="btn primary">Start</button>
+      <button id="timer-pause" class="btn" disabled>Pause</button>
+      <button id="timer-stop" class="btn danger" disabled>Stop &amp; Save</button>
+    </div>
+    <label>Subject
+      <select id="timer-subject">
+        <option value="English">English</option>
+        <option value="General Knowledge">General Knowledge</option>
+        <option value="Mathematics">Mathematics</option>
+        <option value="Current Affairs">Current Affairs</option>
+        <option value="Other">Other</option>
+      </select>
+    </label>
+    <button class="btn ghost" id="timer-close" style="margin-top:10px">Close</button>
+  </div>
+</div>
+
+<div class="toast" id="toast" hidden></div>
+
+<script type="module" src="js/app.js"></script>
+</body>
+</html>
